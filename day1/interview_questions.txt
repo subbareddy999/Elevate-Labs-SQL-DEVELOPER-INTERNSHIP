@@ -1,0 +1,39 @@
+1. What is normalization?
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing large tables into smaller ones and defining relationships between them using foreign keys. This ensures efficient data storage and helps avoid anomalies during insert, update, or delete operations.
+
+2. Explain primary vs foreign key.
+A primary key is a unique identifier for each record in a table. It ensures that no two rows have the same value in that column or set of columns, and it cannot contain NULLs.
+A foreign key is a field in one table that refers to the primary key in another table. It’s used to establish a relationship between two tables and enforce referential integrity.
+
+3. What are constraints?
+Constraints are rules applied to columns in a table to enforce data integrity. Common constraints include:
+PRIMARY KEY – ensures uniqueness and non-null values.
+FOREIGN KEY – enforces a link between two tables.
+NOT NULL – prevents null values.
+UNIQUE – ensures all values in a column are different.
+CHECK – ensures values meet a specific condition.
+DEFAULT – assigns a default value if no value is provided.
+
+4. What is a surrogate key?
+A surrogate key is a system-generated unique identifier for a record, usually an auto-incremented number. It has no business meaning and is used purely for uniquely identifying rows, especially when no natural key is available or reliable.
+
+5. How do you avoid data redundancy?
+Data redundancy is avoided by following normalization principles, properly designing relationships between tables using foreign keys, and ensuring each piece of data is stored in only one place. This helps keep the data consistent and reduces storage waste.
+
+6. What is an ER diagram?
+An ER (Entity-Relationship) diagram is a visual representation of the database structure. It shows the entities (tables), their attributes (columns), and the relationships (foreign keys) between them. It helps in planning and understanding the database design.
+
+7. What are the types of relationships in DBMS?
+There are three main types:
+One-to-One (1:1): One record in a table is related to one record in another.
+One-to-Many (1:N): One record in a table is related to many records in another.
+Many-to-Many (M:N): Many records in one table are related to many records in another, typically implemented via a junction table.
+
+8. Explain the purpose of AUTO_INCREMENT.
+AUTO_INCREMENT is used in MySQL to automatically generate a unique value for a column, usually the primary key, whenever a new record is inserted. It simplifies inserting new records without manually providing unique IDs.
+
+9. What is the default storage engine in MySQL?
+The default storage engine in MySQL is InnoDB. It supports transactions, row-level locking, and foreign key constraints, making it ideal for most modern relational applications.
+
+10. What is a composite key?
+A composite key is a primary key made up of two or more columns. It’s used when a single column is not sufficient to uniquely identify a record, so a combination of values is used to ensure uniqueness.
